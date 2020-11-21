@@ -1,0 +1,211 @@
+{
+  "Probability": 1000,
+  "NextScript": 500,
+  "TeamSetting": [
+    {
+      "NPCSettings": [
+        {
+          "NPCNumber": 11,
+          "NPCMotion": 1
+        },
+        {
+          "NPCNumber": 13
+        }
+      ],
+      "NPCMotionsDefault": [
+        1,
+        2,
+        3
+      ],
+      "ActiveTimeBegin": 200,
+      "ActiveTimeEnd": 500,
+      "XBegin": 0,
+      "XEnd": 1280,
+      "YBegin": 0,
+      "YEnd": 720,
+      "AngleBegin": 0,
+      "AngleEnd": 360
+    },
+    {
+      "NPCSettings": [
+        {
+          "NPCNumber": 11
+        },
+        {
+          "NPCNumber": 13
+        }
+      ],
+      "NPCMotionsDefault": [
+        3
+      ],
+      "ActiveTimeBegin": 200,
+      "ActiveTimeEnd": 500,
+      "XEnd": 1280,
+      "YEnd": 720,
+      "AngleEnd": 360
+    }
+  ],
+  "TeamSettingToCall": [
+    {
+      "CallScript": {
+        "Scripts": [
+          "a.json",
+          "p.json",
+          "p.json",
+          "l.json",
+          "e.json"
+        ],
+        "NPCSettings": [
+          {
+            "NPCNumber": 11,
+            "NPCActiveSteps": 500
+          },
+          {
+            "NPCNumber": 13,
+            "NPCActiveSteps": 103
+          },
+          {
+            "NPCNumber": 16
+          }
+        ],
+        "NPCActiveStepsDefault": [
+          300,
+          600
+        ]
+      },
+      "ActiveTimeBegin": 0,
+      "ActiveTimeEnd": 100,
+      "XBegin": 0,
+      "XEnd": 1280,
+      "YBegin": 0,
+      "YEnd": 720,
+      "AngleBegin": 0,
+      "AngleEnd": 360
+    },
+    {
+      "CallScript": {
+        "Scripts": [
+          "a.json"
+        ],
+        "NPCSettings": [
+          {
+            "NPCNumber": 11,
+            "NPCActiveSteps": 500
+          }
+        ],
+        "NPCActiveStepsDefault": [
+          105
+        ]
+      },
+      "ActiveTimeBegin": 0,
+      "ActiveTimeEnd": 100,
+      "XBegin": 0,
+      "XEnd": 1280,
+      "YBegin": 0,
+      "YEnd": 720,
+      "AngleBegin": 0,
+      "AngleEnd": 360
+    }
+  ],
+  "Objects": [
+    {
+      "NPCSettings": [
+        {
+          "NPCNumber": 11,
+          "NPCMotion": 1
+        },
+        {
+          "NPCNumber": 13
+        },
+        {
+          "NPCNumber": 16,
+          "NPCMotion": 2
+        }
+      ],
+      "NPCMotionsDefault": [
+        1,
+        2,
+        3
+      ],
+      "ActiveTimeBegin": 0,
+      "ActiveTimeEnd": 100,
+      "XBegin": 0,
+      "XEnd": 1280,
+      "YBegin": 0,
+      "YEnd": 720,
+      "AngleBegin": 0,
+      "AngleEnd": 360
+    },
+    {
+      "NPCSettings": [
+        {
+          "NPCNumber": 12,
+          "NPCMotion": 1
+        },
+        {
+          "NPCNumber": 14
+        }
+      ],
+      "NPCMotionsDefault": [
+        2
+      ],
+      "ActiveTimeBegin": 100,
+      "XEnd": 1280,
+      "YBegin": 600,
+      "YEnd": 720,
+      "AngleBegin": 300
+    },
+    {
+      "CallScript": {
+        "Scripts": [
+          "a.json",
+          "b.json",
+          "c.json"
+        ],
+        "NPCSettings": [
+          {
+            "NPCNumber": 11,
+            "NPCActiveSteps": 500
+          },
+          {
+            "NPCNumber": 13
+          },
+          {
+            "NPCNumber": 16
+          }
+        ],
+        "NPCActiveStepsDefault": [
+          300,
+          600
+        ]
+      },
+      "ActiveTimeBegin": 0,
+      "ActiveTimeEnd": 100,
+      "XBegin": 0,
+      "XEnd": 1280,
+      "YBegin": 0,
+      "YEnd": 720,
+      "AngleBegin": 0,
+      "AngleEnd": 360
+    },
+    {
+      "CallScript": {
+        "Scripts": [
+          "a.json"
+        ],
+        "NPCSettings": [
+          {
+            "NPCNumber": 11,
+            "NPCActiveSteps": 500
+          },
+          {
+            "NPCNumber": 12
+          }
+        ],
+        "NPCActiveStepsDefault": [
+          300
+        ]
+      }
+    }
+  ]
+}

@@ -2,7 +2,7 @@ class DataParse{
     
     static findRow(data, condition){
         let raw = data.find(row => row[0] == condition)
-        return raw? raw.splice(1): []
+        return raw? raw.slice(1): []
     }
 
     static getProb(data, prob){
@@ -36,7 +36,7 @@ class DataParse{
     }
 
     static getScripts(data, script){
-        return this.findRow(data, script)
+        return this.findRow(data, script).map(name => name + '.json')
     }
 
     /**
@@ -44,11 +44,11 @@ class DataParse{
      * @param {*} motions 
      */
     static getDefaultMotion(data, motion){
-        return this.findRow(data, motion)[0].split(',').map(motion => Number(motion))
+        return this.findRow(data, motion)[0].toString().split(',').map(motion => Number(motion))
     }
 
     static getDefaultSteps(data, step){
-        return this.findRow(data, step)[0].split(',').map(step => Number(step))
+        return this.findRow(data, step)[0].toString().split(',').map(step => Number(step))
     }
 
     static getInterval(data, type){
