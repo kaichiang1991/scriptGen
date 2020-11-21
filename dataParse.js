@@ -55,6 +55,9 @@ class DataParse{
         return this.findRow(data, type)
     }
 
+    static getCallScriptCount(data, count){
+        return Number(this.findRow(data, count))
+    }
 }
 
 module.exports = DataParse
